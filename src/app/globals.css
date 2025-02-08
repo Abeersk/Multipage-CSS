@@ -20,3 +20,62 @@ a {
 h1, h2, h3 {
   font-weight: bold;
 }
+
+.shoes-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding: 40px;
+  margin: 40px 0;
+}
+
+@media (min-width: 768px) {
+  .shoes-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.shoes-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.shoes-image {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.shoes-title {
+  margin-top: 16px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.shoes-description {
+  color: gray;
+}
+
+.shoes-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.shoes-button {
+  margin-top: 16px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  border: none;
+}
+
+.shoes-button:hover {
+  background-color: rgb(50, 50, 50);
+}
